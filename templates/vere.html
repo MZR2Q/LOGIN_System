@@ -1,0 +1,46 @@
+{% extends 'mainlog.html' %}
+
+
+
+
+
+
+
+
+{% block pleace %}
+
+<p class="text-center h1 fw-bold  mx-1 mx-md-4 mt-4" style="color: #F35B3F;">verification code<p style="text-align: center;color: #F35B3F;"> A message has been sent to <span style="color: #ff2600dd;"> ( {{emailhis}} ) </span> containing a verification code. Please enter the verification code to verify your account</p> <h6 style="color: crimson;">{{massgeErorr}}</h6> </p>
+               
+<form action="{{ url_for('verecode')}}" method="post" class="mx-1 mx-md-4" >
+
+
+    <div class="d-flex flex-row align-items-center mb-4">
+
+      <i style="color: #F35B3F;" class="fas fa-lock fa-lg me-3 fa-fw"></i>
+     
+      <div class="form-outline flex-fill mb-0">
+        
+        <input type="number" name="verc" required id="form3Example4c" class="form-control" />
+        <label style="color: #F35B3F;" class="form-label" for="form3Example4c">Password</label>
+      </div>
+    </div>  
+    <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
+      <button style="background-color: #F35B3F;" id="submitBtn"  type="submit" class="btn btn-primary btn-lg">verify</button>
+    </div>
+
+</form>
+
+</div>
+<div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
+
+<img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-registration/draw1.webp"
+  class="img-fluid" alt="Sample image">
+
+
+{% endblock %}
+  
+                
+ 
+
+
+
