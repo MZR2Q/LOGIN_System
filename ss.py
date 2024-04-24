@@ -12,6 +12,14 @@ app = Flask(__name__)
 app.secret_key = '552266226622784955163'
 
 
+
+
+
+print('qq')
+
+
+
+
 # encryption def
 def encryption(prs):
 
