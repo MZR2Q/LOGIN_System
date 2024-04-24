@@ -7,7 +7,7 @@ from datetime import date, datetime
 daych = datetime.now().date()
 import html
 date_  = date.today()
-
+ 
 app = Flask(__name__) 
 app.secret_key = '552266226622784955163'
 
